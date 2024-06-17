@@ -1,0 +1,467 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(228, 225, 225);
+    position: relative;
+}
+
+/*Navigation Portion*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(11, 11, 112);
+    color: white;
+    position: relative;
+    padding: 25px;
+}
+
+.img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+   
+}
+
+.logo{
+    font-weight: bolder;
+    font-size: 45px;
+    color: rgb(32, 170, 32);
+}
+ul{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+}
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.inline_list{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    width: 300px;
+    background-color: rgb(11, 11, 112);
+}
+
+.inline_list li {
+    width: 100%;
+    padding-right: 10px;
+    display: inline-block;
+    padding: 10px 15px 5px 10px;
+    text-align: left;
+}
+.inline_list li:hover{
+    background-color: rgb(49, 206, 49);
+}
+nav ul li:hover .inline_list{
+    display: flex;
+    flex-direction: column;
+}
+
+.inline_list_two{
+    display: none;
+    position: absolute;
+    top: 92px;
+    left: 300px;
+    width: 200px;
+    background-color: rgb(11, 11, 112);
+
+}
+.inline_list li:hover > ul{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Main Section CSS*/
+section{
+   display: grid; 
+   background-color: rgb(228, 225, 225);
+   height: 100vh;
+   grid-template-columns: 450px 400px 1fr;
+   margin: 50px;
+   gap: 20px;
+}
+
+.sec{
+    border-radius: 17px;
+}
+
+.sec1{
+    background-color: white;
+    width: 215%;
+    height: 260px;
+    grid-row: 1;
+    position: relative;
+    margin-left: -5%;
+}
+
+.sec2{
+    background-color: white;
+    grid-row: span 2;
+    width: 200%;
+    height: 50%;
+    padding: 460px;
+    margin-left: 130%;
+}
+
+.sec3{
+    background-color: white;
+    margin-left: 62%;
+    grid-row: span 4;
+    width: 40%;
+}
+.sec4{
+    background-color: white;
+    grid-row: span 3;
+    width: 215%;
+    height: 96%;
+    margin-top: 9%;
+    margin-left: -5%;
+}
+
+.sec5{
+    background-color: white;
+    width: 230%;
+    height: 320px;
+    margin-top: -70%;
+    margin-left: 130%;
+}
+
+.sec1 p{
+    font-weight: bolder;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.sec input{
+    position: absolute;
+    bottom:27px;
+    left: 8px;
+    border: 1px solid rgba(70, 68, 68, 0.286);
+    display: block;
+    outline: none;
+    margin-left: 3%;
+    width: 40%;
+    font-size: 21px;
+    height: 28%;
+    border-radius: 50px;
+    text-align: left;
+    padding:5px 20px;
+}
+button{
+    position: absolute;
+    bottom: 30px;
+    width: 10%;
+    height: 30%;
+    right: 30px;
+    display: block;
+    background-color: rgb(17, 91, 228);
+    border: none;
+    padding: 8px;
+    font-size: 20px;
+    color: white;
+}
+
+.fb-profile{
+    margin-top: -410px;
+    margin-left: -400px;
+}
+
+.pro2{
+    margin-top: -21%;
+    margin-left: 33%;
+    font-size: 21px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pro3{
+    margin-top: 5%;
+    margin-left: 33%;
+    font-size: 21px;
+    font-family: Arial, sans-serif;
+}
+
+.date2{
+    font-size: 20px;
+    margin-left: 160%;
+    margin-top: -16%;
+}
+
+.date2-1{
+    font-size: 20px;
+    margin-left: 181%;
+    margin-top: -5.4%;
+}
+
+.pic {
+    padding-left: -10%;
+    padding-top: 130px;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 12px solid black;
+}
+
+.image4{
+    font-size: 30px;
+    color: gold;
+}
+
+.btn1{
+    position: absolute;
+    width: 5%;
+    height: 4.3%;
+    justify-content: flex-start;
+    margin-bottom: 940px;
+    display: block;
+    background-color: rgb(17, 91, 228);
+    border: none;
+    border-radius: 50px;
+    padding: 8px;
+    font-size: 20px;
+    color: white;
+}
+
+.bt2{
+    position: absolute;
+    width: 5%;
+    height: 4.2%;
+    justify-content: flex-start;
+    margin-bottom: 690px;
+    display: block;
+    background-color: rgb(17, 91, 228);
+    border: none;
+    border-radius: 50px;
+    padding: 8px;
+    font-size: 20px;
+    color: white;
+}
+
+.bt3{
+    position: absolute;
+    width: 5%;
+    height: 4.3%;
+    justify-content: flex-start;
+    margin-bottom: 440px;
+    display: block;
+    background-color: rgb(17, 91, 228);
+    border: none;
+    border-radius: 50px;
+    padding: 8px;
+    font-size: 20px;
+    color: white;
+}
+
+.bt4{
+    position: absolute;
+    width: 5%;
+    height: 4.4%;
+    justify-content: flex-start;
+    margin-bottom: 190px;
+    display: block;
+    background-color: rgb(17, 91, 228);
+    border: none;
+    border-radius: 50px;
+    padding: 8px;
+    font-size: 20px;
+    color: white;
+}
+
+.bt6{
+    position: absolute;
+    bottom: -15px;
+    width: 678px;
+    height: 10%;
+    right: 16px;
+    display: block;
+    background-color: rgb(17, 91, 228);
+    border: none;
+    padding: 8px;
+    font-size: 23px;
+    color: white;
+}
+
+.blur-image {
+    height: 500px;
+    width: 800px;
+    justify-content: right;
+}
+
+.words5{
+    font-size: 23px;
+    margin-left: 750px;
+    margin-top: -5.4%;
+}
+
+.words6{
+    margin-top: 50px;
+    font-size: 22px;
+    font-family: Arial, sans-serif;
+    margin-left: 100px;
+}
+
+.intro{
+    display: flex;
+}
+
+.intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.bio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio img{
+   width: 15%;
+   height: 15%;
+   margin-top: 2%;
+   margin-left: -55%;
+}
+
+.mind{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    margin-left: 4%;
+    margin-top: 2.8%;
+    font-weight: bold;
+}
+
+.hello{
+    margin-left: 8%;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.img2{
+    height: 400px;
+    width: 500px;
+}
+.card_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 3%;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.para{
+    margin-top: 2%;
+    width: 500px;
+    text-align: left;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+.para a{
+    font-size: 25px;
+}
+
+.name {
+    margin-left: 2%;
+}
+
+.name2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.name3 {
+    margin-top: 10px;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+
+.date{
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    color: gray;
+    padding: 1%;
+    margin-top: 2%;
+}
+
+@media screen and (max-width : 917px){
+    section{
+        grid-template-columns: 380px 380px 1fr;
+       
+     }
+
+
+}
+
+@media screen and (max-width : 870px){
+    section{
+        grid-template-columns: 300px 300px 1fr;
+      
+     }
+
+
+}
+
+@media screen and (max-width : 686px){
+    nav ul{
+        display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .sec2{
+        display: none;
+    }
+    .sec3{
+        display: none;
+    }
+    .sec5{
+        display: none;
+    }
+    .sec1{
+        width: 420px;
+    }
+    .sec4{
+        width: 420px;
+    }
+
+}
+
+@media screen and (max-width : 686px){
+    section{
+        margin-top: -180px;
+    }
+}
